@@ -1,0 +1,93 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 10
+
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "self.children.center.states.hover = self.states.hover"
+position = "before"
+payload = '''
+if self.config.center == G.P_CENTERS["j_ancient"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Ancient Joker", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_ancient.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_baron"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Baron", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_baron.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_blueprint"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_blueprint.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_brainstorm"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_brainstorm.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_campfire"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_campfire.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_dna"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_dna.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_idol"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_idol.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_invisible"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_invisible.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_invisible"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_invisible.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_joker"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_jimbo.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_drivers_license"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_license.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_marble"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_marble.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_obelisk"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_obelisk.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_photograph"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_photograph.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_scary_face"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_scary_face.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+
+if self.config.center == G.P_CENTERS["j_trading"] then 
+    local scale = G.SETTINGS.GRAPHICS.texture_scaling
+    self.children.center = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, {name="Brainstorm", image = love.graphics.newImage("Mods/jokin_jokers/tx/"..scale.."x_trading_card.png", {mipmaps = true, dpiscale = scale}), px=71, py=95}, {x=0, y=0})
+end
+'''
+match_indent = true
+overwrite = false
