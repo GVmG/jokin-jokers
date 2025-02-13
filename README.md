@@ -1,7 +1,7 @@
 # Jokin' Jokers
 A custom texture pack for balatro replacing 15 jokers with revamped, jokey designs by u/cookiezxp on Reddit.
 
-# Installatino
+# Installation
 You will need to install [Lovely](https://github.com/ethangreen-dev/lovely-injector) for this mod to run.
 
 When you've done that, download the [latest release](https://github.com/GVmG/jokin-jokers/releases/latest) of this mod - it will be a .zip archive containing all the files for the mod to work.
