@@ -2,13 +2,13 @@
 A custom texture pack for balatro replacing 15 jokers with revamped, jokey designs by u/cookiezxp on Reddit.
 
 # Installation
-You will need to install [Lovely](https://github.com/ethangreen-dev/lovely-injector) for this mod to run.
+You will need to install [Lovely](https://github.com/ethangreen-dev/lovely-injector) for this mod to run, as well as [Steamodded](https://github.com/Steamodded/smods/wiki). Additionally, this mod requires the [Malverk](https://github.com/Eremel/Malverk) texture manager mod.
 
-When you've done that, download the [latest release](https://github.com/GVmG/jokin-jokers/releases/latest) of this mod - it will be a .zip archive containing all the files for the mod to work.
+Once you've installed those, download the [latest release](https://github.com/GVmG/jokin-jokers/releases/latest) of this mod - it will be a .zip archive containing all the files for the mod to work.
 
-Extract those files to your `%appdata%/balatro/Mods` folder so that the lovely.toml file is inside the `jokin jokers` folder. Make sure it's not in a subfolder! The file structure should be as follows: `%appdata%/balatro/Mods/jokin jokers/lovely.toml`
+Extract those files to your `%appdata%/balatro/Mods` folder so that the main-lua file is inside the `jokin_jokers` folder. Make sure it's not in a subfolder! The file structure should be as follows: `%appdata%/balatro/Mods/jokin_jokers/main.lua`
 
-Once that's done, launch Balatro and enjoy your new textures!
+Once that's done, launch Balatro, and you can enable the textures from your settings>textures page. Enjoy your new textures!
 
 # Credits
 - Raechel/GVmG for the code
